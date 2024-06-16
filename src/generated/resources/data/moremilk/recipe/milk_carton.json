@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:paper"
+    },
+    "X": {
+      "item": "moremilk:milk_bottle"
+    }
+  },
+  "pattern": [
+    "AXA",
+    "AXA",
+    "AXA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moremilk:milk_carton"
+  }
+}
