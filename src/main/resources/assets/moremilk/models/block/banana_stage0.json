@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "moremilk:block/banana_stage0",
+		"particle": "moremilk:block/banana_stage0"
+	},
+	"elements": [
+		{
+			"from": [5.725, -1, 8],
+			"to": [7.09, -0.09, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5.725, -1, 7.09]},
+			"faces": {
+				"north": {"uv": [6, 15, 8, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 0, 2], "texture": "#0"},
+				"south": {"uv": [8, 15, 6, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 0, 2], "texture": "#0"},
+				"up": {"uv": [3, 0, 0, 0], "texture": "#0"},
+				"down": {"uv": [3, 0, 0, 0], "texture": "#0"}
+			}
+		}
+	],
+	"display": {}
+}

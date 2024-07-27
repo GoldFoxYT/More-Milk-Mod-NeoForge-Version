@@ -1,0 +1,14 @@
+{
+  "type": "moremilk:add_item",
+  "conditions": [
+    {
+      "block": "minecraft:tall_grass",
+      "condition": "minecraft:block_state_property"
+    },
+    {
+      "chance": 0.45,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "moremilk:banana_seeds"
+}

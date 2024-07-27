@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "moremilk:block/banana_stage0"
+    },
+    "age=1": {
+      "model": "moremilk:block/banana_stage1"
+    },
+    "age=2": {
+      "model": "moremilk:block/banana_stage2"
+    },
+    "age=3": {
+      "model": "moremilk:block/banana_stage3"
+    },
+    "age=4": {
+      "model": "moremilk:block/banana_stage4"
+    },
+    "age=5": {
+      "model": "moremilk:block/banana_stage5"
+    },
+    "age=6": {
+      "model": "moremilk:block/banana_stage6"
+    }
+  }
+}

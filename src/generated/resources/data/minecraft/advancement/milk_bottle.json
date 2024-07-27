@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "has_milk_bottle": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moremilk:milk_bottle"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "moremilk:textures/gui/advancements/more_milk.png",
+    "description": "Milk in a bottle!",
+    "icon": {
+      "count": 1,
+      "id": "moremilk:milk_bottle"
+    },
+    "title": "Milk Bottle!"
+  },
+  "requirements": [
+    [
+      "has_milk_bottle"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

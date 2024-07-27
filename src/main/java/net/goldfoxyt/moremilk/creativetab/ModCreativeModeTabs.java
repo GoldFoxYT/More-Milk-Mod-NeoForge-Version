@@ -18,8 +18,12 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MILK_BOTTLE.get()))
                     .title(Component.literal("More Milk Tab")).displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.MILK_BOTTLE.get());
+                        output.accept(ModItems.CHOCOLATE_MILK_BOTTLE.get());
+                        output.accept(ModItems.BANANA_MILK_BOTTLE.get());
                         output.accept(ModItems.MILK_CARTON.get());
                         output.accept(ModItems.EMPTY_MILK_CARTON.get());
+                        output.accept(ModItems.BANANA.get());
+                        output.accept(ModItems.BANANA_SEEDS.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

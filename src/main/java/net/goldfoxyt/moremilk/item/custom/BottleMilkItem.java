@@ -14,11 +14,15 @@ import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.fluids.capability.wrappers.FluidBucketWrapper;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.function.Consumer;
+
 public class BottleMilkItem extends Item implements IFluidBucketWrapper {
     private static final int DRINK_DURATION = 32;
+    private final Consumer<LivingEntity> effect;
 
-    public BottleMilkItem(Properties pProperties) {
+    public BottleMilkItem(Properties pProperties, Consumer<LivingEntity> effect) {
         super(pProperties);
+        this.effect = effect;
     }
 
     /**
@@ -34,6 +38,7 @@ public class BottleMilkItem extends Item implements IFluidBucketWrapper {
 
         if (!pLevel.isClientSide) {
             pEntityLiving.removeAllEffects();
+            effect.accept(pEntityLiving);
         }
 
         if (pEntityLiving instanceof Player $$4) {
@@ -47,7 +52,7 @@ public class BottleMilkItem extends Item implements IFluidBucketWrapper {
     /**
      * How long it takes to use or consume an item
      */
-    public int getUseDuration(ItemStack pStack, LivingEntity p_342040_) {
+    public int getUseDuration(ItemStack pStack, LivingEntity livingEntity) {
         return 32;
     }
 

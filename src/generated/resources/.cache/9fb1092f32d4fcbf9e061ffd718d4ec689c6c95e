@@ -1,3 +1,7 @@
-// 1.21	2024-06-16T02:33:36.4752091	Recipes
+// 1.21	2024-07-28T00:57:07.8207847	Recipes
+0ebaa89510f50e0da257eb5e23d10b183b257f0c data/moremilk/advancement/recipes/food/banana_milk_bottle.json
+d98813134eade1edc1bb30246dde639f9b95867c data/moremilk/advancement/recipes/food/chocolate_milk_bottle.json
 dfcf9b24150ee667d3a371efb1b8ef5ee8f677ec data/moremilk/advancement/recipes/food/milk_carton.json
+7b95f74ea0a93d13dc3479af959f8ea3d415660d data/moremilk/recipe/banana_milk_bottle.json
+368a4f2f9bd700fe74d3a4bff65639a2f688ff8e data/moremilk/recipe/chocolate_milk_bottle.json
 dcf944c5a53252f694a34d43e76214a2f7d4220c data/moremilk/recipe/milk_carton.json

@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:milk_bottle",
+  "criteria": {
+    "drank_banana_milk": {
+      "conditions": {
+        "item": {
+          "items": "moremilk:banana_milk_bottle"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": "Damn, that's a lot of energy in one bottle!",
+    "icon": {
+      "count": 1,
+      "id": "moremilk:banana_milk_bottle"
+    },
+    "title": "Banana Boost!"
+  },
+  "requirements": [
+    [
+      "drank_banana_milk"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

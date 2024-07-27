@@ -1,0 +1,5 @@
+// 1.21	2024-07-28T00:57:07.8224129	Global Loot Modifiers : moremilk
+108d0189edb70af24a24c42bea10256b480c261d data/moremilk/loot_modifiers/banana_seeds_from_short_grass.json
+9634192b2a702b5ea80cb920420f39154585f4ad data/moremilk/loot_modifiers/banana_seeds_from_tall_grass.json
+4c19f592c454309c583510390c97be1bd155d7db data/moremilk/loot_modifiers/banana_seeds_from_villages.json
+2f0ccfc6c0c999c00080140c46a40b0a9f02f6a9 data/neoforge/loot_modifiers/global_loot_modifiers.json

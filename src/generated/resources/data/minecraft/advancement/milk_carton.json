@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:milk_bottle",
+  "criteria": {
+    "drank_milk_carton": {
+      "conditions": {
+        "item": {
+          "items": "moremilk:milk_carton"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": "You really did!",
+    "icon": {
+      "count": 1,
+      "id": "moremilk:milk_carton"
+    },
+    "title": "You drank from the carton??"
+  },
+  "requirements": [
+    [
+      "drank_milk_carton"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

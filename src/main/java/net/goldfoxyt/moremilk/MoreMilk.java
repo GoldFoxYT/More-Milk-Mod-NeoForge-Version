@@ -1,8 +1,10 @@
 package net.goldfoxyt.moremilk;
 
+import net.goldfoxyt.moremilk.block.ModBlocks;
 import net.goldfoxyt.moremilk.creativetab.ModCreativeModeTabs;
 import net.goldfoxyt.moremilk.event.ForgeMilkEvent;
 import net.goldfoxyt.moremilk.item.ModItems;
+import net.goldfoxyt.moremilk.loot.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent;
@@ -35,10 +37,10 @@ public class MoreMilk {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        setGlobalConstants();
-
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
@@ -49,10 +51,6 @@ public class MoreMilk {
         NeoForge.EVENT_BUS.register(new ForgeMilkEvent());
     }
 
-    private static void setGlobalConstants() {
-
-    }
-
     private void commonSetup(final FMLCommonSetupEvent event){
 
     }
@@ -60,9 +58,13 @@ public class MoreMilk {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
-            event.accept(ModItems.MILK_CARTON.get());
             event.accept(ModItems.MILK_BOTTLE.get());
+            event.accept(ModItems.CHOCOLATE_MILK_BOTTLE.get());
+            event.accept(ModItems.BANANA_MILK_BOTTLE.get());
+            event.accept(ModItems.MILK_CARTON.get());
             event.accept(ModItems.EMPTY_MILK_CARTON.get());
+            event.accept(ModItems.BANANA.get());
+            event.accept(ModItems.BANANA_SEEDS.get());
         }
     }
 

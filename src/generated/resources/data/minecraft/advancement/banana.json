@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:milk_bottle",
+  "criteria": {
+    "ate_banana": {
+      "conditions": {
+        "item": {
+          "items": "moremilk:banana"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": "Eat a BANANA",
+    "icon": {
+      "count": 1,
+      "id": "moremilk:banana"
+    },
+    "title": "BANANA"
+  },
+  "requirements": [
+    [
+      "ate_banana"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
